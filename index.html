@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <main>
+        <div id="sales-pitch">
+          <h2>Let's do this!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint
+            optio velit nulla necessitatibus illo, reiciendis consequuntur enim
+            nostrum earum illum non ratione, sequi corporis maiores perspiciatis
+            facere fugit. Alias.
+          </p>
+        </div>
+        <div id="sign-up-form-container">
+          <form>
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" />
+            </div>
+
+            <div>
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+
+            <div>
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" id="phoneNumber" />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+            </div>
+
+            <div>
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" />
+              <p class="validation-msg">Passwords match!</p>
+            </div>
+
+            <div>
+              <button type="submit">Create Account</button>
+            </div>
+          </form>
+
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </main>
+      <aside>
+        <div class="logo-container">
+          <img src="./images/odin-lined.png" alt="Odin Logo" />
+          <p>Viking</p>
+        </div>
+
+        <p class="photo-credit">
+          Photo by <a href="#">C D-X</a> on <a href="#">Unsplash</a>
+        </p>
+      </aside>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

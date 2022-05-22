@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.4;
+  background: url(./images/c-d-x-PDX_a_82obo-unsplash.jpg);
+  background-position: center -110px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Rubik", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+p {
+  /* color: #3a3b3c; */
+  font-weight: 300;
+}
+
+main {
+  background: #fff;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  top: 45%;
+  transform: translateY(-80%);
+}
+
+.logo-container img {
+  width: 80px;
+}
+
+.logo-container p {
+  font-family: "Berkshire Swash", cursive;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.photo-credit {
+  color: #333;
+  width: 100%;
+  text-align: right;
+  padding-right: 1.6rem;
+  box-sizing: border-box;
+  bottom: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.photo-credit a {
+  color: #333;
+}
+
+div#sales-pitch {
+  /* background: #f9fafb; */
+  margin-bottom: 54px;
+}
+
+#sales-pitch h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#sales-pitch p {
+  font-size: 0.9rem;
+}
+
+div#sign-up-form-container form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 24px;
+}
+
+#sign-up-form-container p {
+  font-size: 0.9rem;
+}
+
+div#sign-up-form-container form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+div#sign-up-form-container input {
+  border: 1px solid #e2e3e5;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+
+div#sign-up-form-container input:focus {
+  box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 20%);
+  border: 1px solid cornflowerblue;
+  outline: 0;
+}
+
+div#sign-up-form-container label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+div#sign-up-form-container button {
+  box-sizing: border-box;
+  padding: 18px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  background: #2168e9;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  font-family: "Rubik", sans-serif;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+div#sign-up-form-container button:hover {
+  background-color: #4381f1;
+}
+
+.error {
+  border: 1px solid red !important;
+  color: red;
+}
+
+.success {
+  border: 1px solid #00ae00 !important;
+  color: #00ae00;
+}
+
+div#sign-up-form-container p.validation-msg {
+  display: none;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  align-items: center;
+}
+
+.validation-msg {
+  display: none !important;
+  margin-top: 8px;
+}
+
+.show {
+  display: block !important;
+}
+
+.validation-msg-pass {
+  color: #00ae00;
+  font-weight: 400;
+  font-size: 0.75rem !important;
+  margin-top: 8px;
+}
+
+.validation-msg-fail {
+  color: red;
+  font-weight: 400;
+  font-size: 0.75rem !important;
+  margin-top: 8px;
+}
